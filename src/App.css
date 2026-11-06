@@ -1,0 +1,141 @@
+
+/* Center the entire application */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.banking-app {
+  width: 100%;
+  max-width: 700px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main content */
+
+.banking-app section {
+  width: 100%;
+}
+
+.banking-app h1 {
+  margin-bottom: 20px;
+}
+
+.banking-app h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.banking-app p {
+  margin-bottom: 20px;
+}
+
+.banking-app hr {
+  width: 100%;
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid var(--border, #ccc);
+}
+
+/* Account balance card */
+
+.account-card {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.account-card h1 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.account-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Forms */
+
+.banking-app form {
+  width: 100%;
+  margin: 0 auto 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-weight: 500;
+}
+
+.banking-app input {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.transaction-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Buttons */
+
+.banking-app button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.banking-app button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile screens */
+
+@media (max-width: 600px) {
+  .banking-app {
+    padding: 24px 16px;
+  }
+
+  .account-card h1 {
+    font-size: 30px;
+  }
+
+  .transaction-form {
+    flex-direction: column;
+  }
+
+  .transaction-form button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
